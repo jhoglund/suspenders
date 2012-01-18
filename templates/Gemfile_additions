@@ -7,8 +7,11 @@ gem 'flutie'
 gem 'bourbon'
 gem 'copycopter_client'
 gem 'airbrake'
+gem 'haml'
+
 
 group :development do
+  gem "haml-rails"
   gem "heroku"
 end
 
