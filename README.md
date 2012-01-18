@@ -1,3 +1,10 @@
+Customization
+------------
+
+A cusomized for to use haml
+
+---
+
 Suspenders is the base Rails application used at [thoughtbot](http://thoughtbot.com/community).
 
   ![Suspenders boy](http://media.tumblr.com/1TEAMALpseh5xzf0Jt6bcwSMo1_400.png)
