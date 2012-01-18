@@ -3,14 +3,14 @@ $:.push File.expand_path("../lib", __FILE__)
 require "suspenders/version"
 
 Gem::Specification.new do |s|
-  s.name     = 'suspenders'
+  s.name     = 'suspenders_haml'
   s.version  = Suspenders::VERSION
   s.date     = Date.today.strftime('%Y-%m-%d')
-  s.authors  = ["thoughtbot"]
-  s.email    = 'support@thoughtbot.com'
-  s.homepage = 'http://github.com/thoughtbot/suspenders'
+  s.authors  = ["thoughtbot", "Jonas Höglund"]
+  s.email    = 'jonas@stixyexperience.com'
+  s.homepage = 'http://github.com/jhoglund/suspenders'
 
-  s.summary     = "Generate a Rails app using thoughtbot's best practices."
+  s.summary     = "Generate a Rails app using thoughtbot's best practices. Haml by default as template language."
   s.description = <<-HERE
 Suspenders is a base Rails project that you can upgrade. It is used by
 thoughtbot to get a jump start on a working app. Use Suspenders if you're in a
