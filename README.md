@@ -1,7 +1,7 @@
 Customization
 ------------
 
-A cusomized for to use haml
+A customized fork to use haml as default template language
 
 ---
 
