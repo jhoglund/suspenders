@@ -61,12 +61,21 @@ module Suspenders
       new_gems = File.open(additions_path).read
       inject_into_file("Gemfile", "\n#{new_gems}", :after => /gem 'jquery-rails'/)
     end
+    
+    def configure_haml
+      generators_config = <<-RUBY
+    config.generators do |generate|
+      generate.template_engine :haml
+    end
+      RUBY
+      inject_into_class "config/application.rb", "Application", generators_config
+    end
 
     def configure_rspec
       generators_config = <<-RUBY
-          config.generators do |generate|
-            generate.test_framework :rspec
-          end
+    config.generators do |generate|
+      generate.test_framework :rspec
+    end
       RUBY
       inject_into_class "config/application.rb", "Application", generators_config
     end
