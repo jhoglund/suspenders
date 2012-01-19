@@ -27,17 +27,16 @@ module Suspenders
     end
 
     def create_shared_flashes
-      copy_file "_flashes.html.erb", "app/views/shared/_flashes.html.erb"
+      copy_file "_flashes.html.haml", "app/views/shared/_flashes.html.haml"
     end
 
     def create_shared_javascripts
-      copy_file "_javascript.html.erb", "app/views/shared/_javascript.html.erb"
+      copy_file "_javascript.html.haml", "app/views/shared/_javascript.html.haml"
     end
 
     def create_application_layout
-      template "suspenders_layout.html.erb.erb",
-               "app/views/layouts/application.html.erb",
-               :force => true
+      remove_file "app/views/layouts/application.html.erb"
+      copy_file "suspenders_layout.html.haml", "app/views/layouts/application.html.haml"
     end
 
     def create_common_javascripts
